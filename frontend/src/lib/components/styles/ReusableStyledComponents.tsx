@@ -7,18 +7,34 @@ export const PageContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: var(--first-font), sans-serif;
+  font-family: var(--first-font), arial, sans-serif;
   width: 100%;
   /* max-width: 1200px; */
   margin: 0;
-  padding: 50px;
+  padding: 20rem;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: var(--first-font), arial, sans-serif;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0;
+  padding: 0;
 `;
 
 export const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
   margin: 0;
-  padding: 10px;
-  background-color: green;
+  padding: 0;
+  border-radius: var(--first-borderradius);
 `;
 
 export const Button = styled.button`

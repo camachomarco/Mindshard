@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 }
 @font-face {
   font-family: "inconsolata-first";
-  src: url("/fonts/inconsolata/Inconsolata_Condensed-Black.ttf") format("truetype");
+  src: url("/fonts/inconsolata/Inconsolata_expanded-bold.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -31,11 +31,19 @@ const GlobalStyle = createGlobalStyle`
 
 /* Variables */
 :root {
-  --first-color: #ffffff;
+  --first-color: #f4f4f4;
   --second-color: #18589e;
   --third-color: #e9f2fc;
-  --fourth-color: #806fe3;
-
+  --fourth-color: #3d9ff5;
+  --first-color-rgb: 255, 255, 255;
+  --second-color-rgb: 24, 88, 158;
+  --third-color-rgb: 233, 242, 252;
+  --fourth-color-rgb: 61, 159, 245;
+  --first-color-border: #ffffff;
+  --second-color-border: 24, 88, 158;
+  --third-color-border: 233, 242, 252;
+  --fourth-color-border: 61, 159, 245;
+  
   --first-highlight: #4ee77e;
 
   --primary-glow: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #ff00bf8d 160deg, transparent 360deg);
@@ -61,8 +69,8 @@ const GlobalStyle = createGlobalStyle`
   --spacing-unit: 16px;
 
   --border-styles: solid;
-  --border-radius: 4px;
-  --border-color: #e0e0e0;
+  --first-borderradius: 16px;
+  --second-borderradius: 16px;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -84,9 +92,19 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--first-color);
+
 }
 
+body {
+  background-image: linear-gradient(to top right, var(--first-color), var(--third-color));
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: var(--first-font), arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+
+
+}
 
 
 
