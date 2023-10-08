@@ -1,9 +1,13 @@
-import StyledComponentsRegistry from "@/lib/components/misc/registry";
-import "./globals.css";
+"use client";
+
+import GlobalStyle from "@/lib/components/styles/GlobalStyle";
+import StyledComponentsRegistry from "@/lib/components/styles/registry";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Div } from "@/lib/components/styles/ReusableStyledComponents";
+import styled from "styled-components";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MindShard",
@@ -14,8 +18,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <GlobalStyle />
+
+        <StyledComponentsRegistry>
+          <Header>Header</Header>
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
 }
+
+const Header = styled(Div)`
+  background-color: rgba(123, 123, 123, 1);
+`;
