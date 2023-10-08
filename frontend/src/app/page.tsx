@@ -1,20 +1,25 @@
 "use client";
 
-import { Container, Div, PageContainer } from "@/lib/components/styles/ReusableStyledComponents";
+import { Container, Div, FileInput, FileInputLabel, PageContainer, TextInput } from "@/lib/components/styles/ReusableStyledComponents";
 import styled from "styled-components";
 
 export default function Home() {
   return (
     <PageContainer_>
-      <Input style={{ backgroundColor: "red" }}>
-        <h2>Turn any piece of data into a rich and insightful summary.</h2>
-        <p>Input</p>
-        <input type="text" placeholder="Enter text" />
+      <Input>
+        <h1>
+          Turn any chunk of data <br /> into rich and insightful summaries
+        </h1>
+        <h3>Input</h3>
+        <TextInput placeholder="Enter Youtube url" />
         <p>or&nbsp;</p>
-        <input type="file" />
+        <FileInputLabel htmlFor="fileInput">Upload video</FileInputLabel>
+        <FileInput id="fileInput" />
       </Input>
 
-      <Output style={{ backgroundColor: "green" }}>output</Output>
+      <Output>
+        <h3>Output</h3>
+      </Output>
     </PageContainer_>
   );
 }
@@ -22,13 +27,16 @@ export default function Home() {
 const PageContainer_ = styled(Div)`
   flex-direction: column;
   margin: 20rem 0 0 0;
-  border: 1px solid green;
-  height: 20rem;
+  /* border: 1px solid green; */
 
   justify-content: space-around;
 `;
 
 const Input = styled(Div)`
   flex-direction: column;
+  justify-content: space-around;
+  height: 20rem;
 `;
-const Output = styled(Div)``;
+const Output = styled(Div)`
+  height: 20rem;
+`;

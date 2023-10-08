@@ -22,13 +22,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <StyledComponentsRegistry>
           <Container>
-            <Header>
+            <Navbar>
               {" "}
-              <h1>Mindshard</h1>
+              <h2>Mindshard</h2>
               <RightSideNavbar>
                 <p>Demo</p>
               </RightSideNavbar>
-            </Header>
+            </Navbar>
             {children}
           </Container>
         </StyledComponentsRegistry>
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 
-const Header = styled(Div)`
+const Navbar = styled(Div)`
   position: fixed;
   background-color: rgba(var(--first-color-rgb), 0.2);
   border: 1px solid var(--first-color-border);
@@ -52,7 +52,6 @@ const Header = styled(Div)`
 `;
 
 const RightSideNavbar = styled(Div)`
-  font-family: var(--first-font);
   font-weight: 900;
   width: 7rem;
   justify-content: space-between;

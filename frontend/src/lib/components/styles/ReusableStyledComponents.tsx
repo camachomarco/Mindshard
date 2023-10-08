@@ -7,7 +7,7 @@ export const PageContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: var(--first-font), arial, sans-serif;
+  /* font-family: var(--first-font), arial, sans-serif; */
   width: 100%;
   /* max-width: 1200px; */
   margin: 0;
@@ -19,7 +19,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  font-family: var(--first-font), arial, sans-serif;
+  /* font-family: var(--first-font), arial, sans-serif; */
   width: 100%;
   /* max-width: 1200px; */
   margin: 0;
@@ -59,7 +59,34 @@ export const Text = styled.p`
   color: var(--black);
 `;
 
-export const Header = styled.h1`
-  font-size: 2rem;
-  color: var(--black);
+export const TextInput = styled.input.attrs({ type: "text" })`
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: var(--second-color);
+    outline: none;
+  }
+`;
+
+export const FileInput = styled.input.attrs({ type: "file" })`
+  display: none;
+`;
+
+export const FileInputLabel = styled.label`
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--fourth-color);
+  }
 `;

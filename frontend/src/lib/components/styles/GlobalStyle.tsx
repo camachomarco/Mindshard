@@ -15,6 +15,14 @@ const GlobalStyle = createGlobalStyle`
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "prodisplay-second";
+  src: url("/fonts/sfprodisplay/sfprodisplaybold.TTF") format("truetype");
+  font-weight: 900;
+  font-style: bold;
+}
+
 @font-face {
   font-family: "inconsolata-first";
   src: url("/fonts/inconsolata/Inconsolata_expanded-bold.ttf") format("truetype");
@@ -59,6 +67,7 @@ const GlobalStyle = createGlobalStyle`
 
   --first-font: "prodisplay-first";
   --second-font: "inconsolata-first";
+  --third-font: "prodisplay-second";
 
   --first-fontsize: 1.25rem;
   --second-fontsize: 1rem;
@@ -99,12 +108,27 @@ body {
   background-image: linear-gradient(to top right, var(--first-color), var(--third-color));
   background-position: center;
   background-repeat: no-repeat;
-  font-family: var(--first-font), arial, sans-serif;
+  font-family: var(--first-font), "arial", sans-serif;
   width: 100vw;
   height: 100vh;
 
 
 }
+
+h1 {
+  font-family: var(--third-font);
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--second-color), var(--fourth-color));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 2.2rem;
+}
+
 
 
 
