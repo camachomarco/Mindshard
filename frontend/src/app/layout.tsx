@@ -3,11 +3,8 @@
 import GlobalStyle from "@/lib/components/styles/GlobalStyle";
 import StyledComponentsRegistry from "@/lib/components/styles/registry";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Div, Container } from "@/lib/components/styles/ReusableStyledComponents";
 import styled from "styled-components";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MindShard",

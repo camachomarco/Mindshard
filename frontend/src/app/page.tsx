@@ -8,7 +8,7 @@ export default function Home() {
     <PageContainer_>
       <Input>
         <h1>
-          Turn any chunk of data <br /> into rich and insightful summaries
+          Turn any chunk of data <br /> into insightful summaries
         </h1>
         <h3>Input</h3>
         <TextInput placeholder="Enter Youtube url" />
@@ -24,9 +24,8 @@ export default function Home() {
   );
 }
 
-const PageContainer_ = styled(Div)`
+const PageContainer_ = styled(PageContainer)`
   flex-direction: column;
-  margin: 20rem 0 0 0;
   /* border: 1px solid green; */
 
   justify-content: space-around;

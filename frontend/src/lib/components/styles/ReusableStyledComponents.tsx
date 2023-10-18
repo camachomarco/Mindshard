@@ -10,8 +10,8 @@ export const PageContainer = styled.div`
   /* font-family: var(--first-font), arial, sans-serif; */
   width: 100%;
   /* max-width: 1200px; */
-  margin: 0;
-  padding: 20rem;
+  margin: 16rem 0 0 0;
+  padding: 0;
 `;
 
 export const Container = styled.div`
