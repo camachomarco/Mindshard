@@ -49,7 +49,7 @@ def fullProcess(input_str):
     overview, summary = generate_content(transcribed_text)
 
     # Return the overview and summary
-    return {"overview": overview, "summary": summary, "metadata": metadata}
+    return {"overview": overview, "summary": summary}
 
 
 # if __name__ == "__main__":

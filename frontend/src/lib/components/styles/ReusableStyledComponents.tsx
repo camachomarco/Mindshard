@@ -37,12 +37,33 @@ export const Div = styled.div`
   border-radius: var(--first-borderradius);
 `;
 
+export const Form = styled.form`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--first-borderradius);
+`;
+
 export const Button = styled.button`
-  background-color: var(--first-color);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
+  background-color: var(--first-highlight);
+  color: var(--black);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  border: 1px solid rgba(68, 199, 109, 0.58);
+
+  &:hover {
+    background-color: var(--second-highlight);
+    border: 1px solid rgba(68, 199, 109, 0.1);
+  }
 `;
 
 export const Card = styled.div`

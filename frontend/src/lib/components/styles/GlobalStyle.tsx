@@ -47,12 +47,14 @@ const GlobalStyle = createGlobalStyle`
   --second-color-rgb: 24, 88, 158;
   --third-color-rgb: 233, 242, 252;
   --fourth-color-rgb: 61, 159, 245;
-  --first-color-border: #ffffff;
+  --first-color-border: 255, 255, 255;
   --second-color-border: 24, 88, 158;
   --third-color-border: 233, 242, 252;
   --fourth-color-border: 61, 159, 245;
   
   --first-highlight: #4ee77e;
+  --second-highlight: rgb(230, 235, 231);
+  --first-highlight-rgb: 76, 231, 126;
 
   --primary-glow: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #ff00bf8d 160deg, transparent 360deg);
   --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
