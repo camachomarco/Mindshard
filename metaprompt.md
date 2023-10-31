@@ -52,4 +52,4 @@ Connect the python backend to the Next.JS 13 frontend
 
 1. Review this .mdx file for a quick recap.
 2. If any, ask for clarifications.
-3. Continue with the next planned steps.
+3. Continue with the next planned steps
