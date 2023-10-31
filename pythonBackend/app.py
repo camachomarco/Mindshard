@@ -40,9 +40,7 @@ def summarize():
     data = request.json
     input_str = data.get("input_str", "")
 
-    print(
-        input_str, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    )
+    print(input_str, "summarization started from flask")
     result = fullProcess(input_str)
 
     # Save the result to the database

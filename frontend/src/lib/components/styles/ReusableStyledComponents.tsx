@@ -37,7 +37,7 @@ export const Div = styled.div`
   border-radius: var(--first-borderradius);
 `;
 
-export const Form = styled.form`
+export const Form_ = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ export const Form = styled.form`
   border-radius: var(--first-borderradius);
 `;
 
-export const Button = styled.button`
+export const Button_ = styled.button`
   background-color: var(--first-highlight);
   color: var(--black);
   padding: 8px 16px;

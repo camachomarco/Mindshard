@@ -20,6 +20,8 @@ export async function fullProcess(e: FormData) {
     }),
   });
 
+  // This is retarded. Look at actions and figure out if connecting backend without server actions is a thing, if not just fix the client component/styled component issues you have and reset.
+
   if (!res.ok) {
     throw new Error(`Server responded with status: ${res.status}`);
   }

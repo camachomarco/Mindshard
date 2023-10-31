@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
 
-export default function Loading() {
+export default function LoadingPage() {
   return <div>Loading</div>;
 }
